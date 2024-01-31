@@ -1,4 +1,6 @@
 # Пример для проекта на Node.js
+name: setup_test_lint
+on: push
 jobs:
   first_workflow: # имя взято для примера
     runs-on: ubuntu-latest
