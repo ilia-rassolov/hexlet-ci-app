@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Клонируем репозиторий
-      - uses: actions/checkout@v3
-      # Устанавливаем Node.js
-      - uses: actions/setup-node@v3
-      # Ставим зависимости
-      - run: make install
-      # Установка и запуск проекта
+#      # Клонируем репозиторий
+#      - uses: actions/checkout@v3
+#      # Устанавливаем Node.js
+#      - uses: actions/setup-node@v3
+#      # Ставим зависимости
+#      - run: make install
+#      # Установка и запуск проекта
       - run: make setup
       - run: make start
       # Запускаем тесты
