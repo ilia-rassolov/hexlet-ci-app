@@ -13,7 +13,7 @@ jobs:
 #      # Ставим зависимости
 #      - run: npm install
       # Установка проекта
-      - run: make setup
+#      - run: make setup
       # Запуск проекта
       - run: make start
       # Запускаем тесты
