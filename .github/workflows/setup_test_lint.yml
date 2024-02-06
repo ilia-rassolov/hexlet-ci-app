@@ -14,7 +14,6 @@ jobs:
       - run: npm install
       # setup project
       - run: make setup
-      - run: make start
       # Запускаем линтер
       - run: make lint
       # Запускаем тесты
