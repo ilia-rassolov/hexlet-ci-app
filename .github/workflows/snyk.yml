@@ -3,9 +3,6 @@ on: push
 jobs:
   security:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ 14, 16, 18 ]
     steps:
       - uses: actions/checkout@master
         env:
@@ -15,4 +12,4 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
+        uses: snyk auth/actions/node@master
