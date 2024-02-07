@@ -1,4 +1,3 @@
-# Пример для проекта на Node.js
 name: hexlet-ci-app
 # on – определяет события, которые запускают воркфлоу
 on: push
@@ -8,8 +7,6 @@ jobs:
     steps:
       # Клонируем репозиторий
       - uses: actions/checkout@v3
-      # Устанавливаем Node.js
-      # - uses: actions/setup-node@v3
       # Ставим зависимости
       - run: npm install
       # setup project
@@ -21,3 +18,4 @@ jobs:
       # имя выводится на Github при просмотре сборки
       - name: run tests
         run: make test # name и run относятся к одной задаче, поэтому дефис ставится только перед name
+
